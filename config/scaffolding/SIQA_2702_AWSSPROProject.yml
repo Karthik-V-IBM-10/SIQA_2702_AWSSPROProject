@@ -27,6 +27,11 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: prabhakarsag
   gitBranch: main
+- name: JMS2waySSL
+  gitServerName: SIQAPsurGit
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: prabhakarsag
+  gitBranch: main
 services:
 - serviceName: project.siqa_2702_awsspro.integrations:SIQAAdapterFlow
   packages:
@@ -62,10 +67,10 @@ configurationVariables:
   : "0"
   ? artConnection.SIQA_2702_AWSSPROProject.project.siqa_2702_awsspro.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
   : com.wm.dd.jdbcx.sqlserver.SQLServerDataSource
-  ? artConnection.SIQA_2702_AWSSPROProject.project.siqa_2702_awsspro.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
-  : SIQACloud
   ? artConnection.SIQA_2702_AWSSPROProject.project.siqa_2702_awsspro.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : sa
+  ? artConnection.SIQA_2702_AWSSPROProject.project.siqa_2702_awsspro.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
+  : SIQACloud
   jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
   ? artConnection.SIQA_2702_AWSSPROProject.project.siqa_2702_awsspro.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.blockingTimeout
   : "1000"
